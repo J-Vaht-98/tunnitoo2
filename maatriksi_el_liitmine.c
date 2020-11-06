@@ -6,6 +6,7 @@
 
 #include <stdio.h>
 int summa(int maatriks[][10], int n, int m){
+//liidab kokku maatriksi esimese kolme või vähema rea positiivsed elemendid
 int sum = 0;
 for(int i=0; i<n;i++){
     for(int j=0;j<m;j++){
@@ -17,8 +18,7 @@ printf("Esimese kolme või vähema rea summa on %d\n",sum);
 return sum;
 }
 void valjastus(int maatriks[][10], int n, int m){
-    
-    //printf("Summa on %d \n", sum);
+    // prindib ekraanile sisestatud maatriksi
     printf("Maatriks on:\n");
 
     for(int i = 0; i<n;i++){
@@ -34,7 +34,7 @@ int max=10;
 int maatriks[10][10];
 int main(void){
 /*********SISESTUS*******/
-//Küsi ridade ja veergude arv
+//Küsib ridade ja veergude arvu
 while (1)
 {
     printf("Ridu ja veerge peab olema alla %d\n",max);
@@ -63,7 +63,7 @@ printf("\n");
  rea positiivsete arvude summad*/
 int sum = summa(maatriks, n, m);
 
-/***************************Valjastus**************************/
+/***************************Väljastus**************************/
 valjastus(maatriks, n, m);
 
 
